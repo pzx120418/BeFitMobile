@@ -16,7 +16,7 @@ public partial class App : Application
             if (database == null)
             {
                 database = new AppDatabase(
-                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BeFit_final.db3"));
+                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BeFit_v3.db3"));
             }
             return database;
         }

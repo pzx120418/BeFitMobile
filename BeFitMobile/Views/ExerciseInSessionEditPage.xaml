@@ -6,11 +6,13 @@
 
     <VerticalStackLayout Padding="10" Spacing="10">
 
-        <Label Text="Id typu ćwiczenia" />
-        <Entry x:Name="exerciseTypeEntry" Keyboard="Numeric" />
+        <Label Text="Typ ćwiczenia" />
+        <Picker x:Name="exercisePicker"
+            ItemDisplayBinding="{Binding Name}" />
 
-        <Label Text="Id sesji treningowej" />
-        <Entry x:Name="sessionEntry" Keyboard="Numeric" />
+        <Label Text="Sesja treningowa" />
+        <Picker x:Name="sessionPicker"
+            ItemDisplayBinding="{Binding StartTime}" />
 
         <Label Text="Obciążenie (kg)" />
         <Entry x:Name="weightEntry" Keyboard="Numeric" />
@@ -22,8 +24,9 @@
         <Entry x:Name="repsEntry" Keyboard="Numeric" />
 
         <Button Text="Zapisz"
-                Clicked="OnSaveClicked" />
+            Clicked="OnSaveClicked" />
 
     </VerticalStackLayout>
+
 
 </ContentPage>

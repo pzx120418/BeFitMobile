@@ -2,12 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BeFitMobile.Views.ExerciseTypeEditPage"
-             Title="Dodaj ćwiczenie">
+             Title="Dodaj typ ćwiczenia">
 
-    <VerticalStackLayout Padding="10">
+    <VerticalStackLayout Padding="10" Spacing="10">
 
-        <Entry x:Name="nameEntry"
-               Placeholder="Nazwa ćwiczenia" />
+        <Label Text="Nazwa ćwiczenia" />
+        <Entry x:Name="nameEntry" />
+
+        <Label Text="Kategoria" />
+        <Entry x:Name="categoryEntry" />
+
+        <Label Text="Opis" />
+        <Editor x:Name="descriptionEntry"
+                HeightRequest="120" />
 
         <Button Text="Zapisz"
                 Clicked="OnSaveClicked" />

@@ -15,11 +15,14 @@ public partial class ExerciseTypeEditPage : ContentPage
     {
         var exercise = new ExerciseType
         {
-            Name = nameEntry.Text
+            Name = nameEntry.Text,
+            Category = categoryEntry.Text,
+            Description = descriptionEntry.Text
         };
 
         await App.Database.SaveExerciseTypeAsync(exercise);
 
         await Navigation.PopAsync();
     }
+
 }
