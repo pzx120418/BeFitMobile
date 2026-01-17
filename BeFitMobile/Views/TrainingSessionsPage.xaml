@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeFitMobile.Views.TrainingSessionsPage"
+             Title="Sesje treningowe">
+
+    <VerticalStackLayout Padding="10" Spacing="10">
+
+        <Button Text="Dodaj nową sesję"
+                Clicked="OnAddClicked" />
+
+        <CollectionView x:Name="sessionList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="5" Padding="10">
+                        <HorizontalStackLayout Spacing="10">
+
+                            <Label Text="{Binding StartTime}"
+                                   VerticalOptions="Center" />
+
+                            <Label Text=" - " />
+
+                            <Label Text="{Binding EndTime}"
+                                   VerticalOptions="Center" />
+
+                            <Button Text="Usuń"
+                                    Clicked="OnDeleteClicked"
+                                    CommandParameter="{Binding .}"
+                                    HorizontalOptions="EndAndExpand"/>
+
+                        </HorizontalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
+
+</ContentPage>

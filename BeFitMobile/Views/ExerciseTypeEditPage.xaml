@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeFitMobile.Views.ExerciseTypeEditPage"
+             Title="Dodaj ćwiczenie">
+
+    <VerticalStackLayout Padding="10">
+
+        <Entry x:Name="nameEntry"
+               Placeholder="Nazwa ćwiczenia" />
+
+        <Button Text="Zapisz"
+                Clicked="OnSaveClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
