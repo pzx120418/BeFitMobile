@@ -10,9 +10,17 @@
 
         <DatePicker x:Name="startDatePicker" />
 
+        <Label Text="Godzina rozpoczęcia" />
+
+        <TimePicker x:Name="startTimePicker" />
+
         <Label Text="Data zakończenia" />
 
         <DatePicker x:Name="endDatePicker" />
+
+        <Label Text="Godzina zakończenia" />
+
+        <TimePicker x:Name="endTimePicker" />
 
         <Button Text="Zapisz"
                 Clicked="OnSaveClicked" />

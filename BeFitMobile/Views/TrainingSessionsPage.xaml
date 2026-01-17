@@ -15,22 +15,23 @@
                     <Frame Margin="5" Padding="10">
                         <HorizontalStackLayout Spacing="10">
 
-                            <Label Text="{Binding StartTime}"
-                                   VerticalOptions="Center" />
+                            <Label Text="{Binding StartTime, StringFormat='{0:dd.MM.yyyy HH:mm}'}"
+                            VerticalOptions="Center" />
 
                             <Label Text=" - " />
 
-                            <Label Text="{Binding EndTime}"
-                                   VerticalOptions="Center" />
+                            <Label Text="{Binding EndTime, StringFormat='{0:dd.MM.yyyy HH:mm}'}"
+                            VerticalOptions="Center" />
 
                             <Button Text="Usuń"
-                                    Clicked="OnDeleteClicked"
-                                    CommandParameter="{Binding .}"
-                                    HorizontalOptions="EndAndExpand"/>
+                            Clicked="OnDeleteClicked"
+                            CommandParameter="{Binding .}"
+                            HorizontalOptions="EndAndExpand"/>
 
                         </HorizontalStackLayout>
                     </Frame>
                 </DataTemplate>
+
             </CollectionView.ItemTemplate>
         </CollectionView>
 

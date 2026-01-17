@@ -20,6 +20,9 @@
         <ShellContent
             Title="Sesje treningowe"
             ContentTemplate="{DataTemplate views:TrainingSessionsPage}" />
+        <ShellContent
+            Title="Ćwiczenia w sesjach"
+            ContentTemplate="{DataTemplate views:ExerciseInSessionPage}" />
 
 
     </TabBar>

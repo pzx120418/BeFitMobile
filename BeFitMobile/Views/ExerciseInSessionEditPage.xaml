@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeFitMobile.Views.ExerciseInSessionEditPage"
+             Title="Dodaj ćwiczenie">
+
+    <VerticalStackLayout Padding="10" Spacing="10">
+
+        <Label Text="Id typu ćwiczenia" />
+        <Entry x:Name="exerciseTypeEntry" Keyboard="Numeric" />
+
+        <Label Text="Id sesji treningowej" />
+        <Entry x:Name="sessionEntry" Keyboard="Numeric" />
+
+        <Label Text="Obciążenie (kg)" />
+        <Entry x:Name="weightEntry" Keyboard="Numeric" />
+
+        <Label Text="Liczba serii" />
+        <Entry x:Name="setsEntry" Keyboard="Numeric" />
+
+        <Label Text="Liczba powtórzeń" />
+        <Entry x:Name="repsEntry" Keyboard="Numeric" />
+
+        <Button Text="Zapisz"
+                Clicked="OnSaveClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
